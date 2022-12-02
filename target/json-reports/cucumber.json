@@ -1,0 +1,129 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-02T14:18:59.884Z",
+        "line": 5,
+        "name": "TC01 L\u0027utilisateur peut créer son compte sur app Ornikar.",
+        "description": "",
+        "id": "ornikar-crééruncompte-demo;tc01-l-utilisateur-peut-créer-son-compte-sur-app-ornikar.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59720021000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "L\u0027utilisateur se rend à l\u0027app Ornikar",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_se_rend_à_l_app_ornikar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1583531200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "L\u0027utilisateur accepte les cookies.",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_accepte_les_cookies()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Step [L{string}inscris gratuitment.] is defined with 0 parameters at \u0027stepdefinitions.CréerMonCompte.lUtilisateurCliqueSurLePremierBoutonJeMInscrisGratuitment()\u0027.\nHowever, the gherkin step has 1 arguments:\n * \u0027utilisateur clique sur le premier bouton Je m\u0027\nStep text: L\u0027utilisateur clique sur le premier bouton Je m\u0027inscris gratuitment.\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 1532700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "L\u0027utilisateur clique sur le premier bouton Je m\u0027inscris gratuitment.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027utilisateur clique sur le premier bouton Je m\u0027",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefinitions.CréerMonCompte.lUtilisateurCliqueSurLePremierBoutonJeMInscrisGratuitment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 711300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "L\u0027utilisateur clique sur le bouton Je m\u0027inscris gratuitment.",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 961900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "L\u0027utilisateur renseigne ses informations",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_renseigne_ses_informations()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 803800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "L\u0027utilisateur coche deux cases d\u0027acceptations",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_coche_deux_cases_d_acceptations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "L\u0027utilisateur tape sur le bouton Valide",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_tape_sur_le_bouton_valide()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "L\u0027utilisateur confirme qu il est bien connecté au site en vérifiant son nom qui s\u0027affiche sur la page confirmation.",
+            "match": {
+              "location": "stepdefinitions.CréerMonCompte.l_utilisateur_confirme_qu_il_est_bien_connecté_au_site_en_vérifiant_son_nom_qui_s_affiche_sur_la_page_confirmation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestcréerMoncompte"
+          }
+        ]
+      }
+    ],
+    "name": "Ornikar CréérUnCompte Demo",
+    "description": "",
+    "id": "ornikar-crééruncompte-demo",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/source/feauture/connection.feature",
+    "tags": []
+  }
+]

@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
-        features="src/test/resources/features",
+        features="src/test/java/source/feauture",
         glue = "stepdefinitions",
-        tags = "@popup",
+        tags = "@TestcréerMoncompte",
         dryRun = false
 )
 public class runner {
