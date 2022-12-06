@@ -10,7 +10,7 @@ public class ReusableMethods {
 
     public static void clickOnPage(String pageName) throws InterruptedException {
         Thread.sleep(4000);
-        List<AndroidElement> pages = DriverOrn.driver().findElementsByClassName("android.widget.TextView");
+        List<AndroidElement> pages = DriverMob.driver().findElementsByClassName("android.widget.TextView");
         for (MobileElement page: pages) {
             if (page.getText().equals(pageName)){
                 page.click();
@@ -23,7 +23,7 @@ public class ReusableMethods {
     }
 
     public static void scrollWithUiScrollable(String elementText){
-        AndroidDriver driver = DriverOrn.driver();
+        AndroidDriver driver = DriverMob.driver();
         driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+elementText+"\"))");
         driver.findElementByXPath("//*[@text='"+elementText+"']").click();
     }

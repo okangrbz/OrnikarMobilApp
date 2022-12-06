@@ -4,7 +4,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import utillities.DriverOrn;
+import utillities.DriverMob;
 
 import java.time.Duration;
 
@@ -15,7 +15,7 @@ public class CréerMoncompte {
 
         public CréerMoncompte() {
 
-            PageFactory.initElements(new AppiumFieldDecorator(DriverOrn.driver(), Duration.ofSeconds(30)), this);
+            PageFactory.initElements(new AppiumFieldDecorator(DriverMob.driver(), Duration.ofSeconds(30)), this);
         }
 
 
@@ -26,7 +26,7 @@ public class CréerMoncompte {
         public WebElement premierboutoninscr;
 
 
-        @AndroidFindBy(xpath = "(//android.widget.Button)[3]")
+        @AndroidFindBy(xpath = "//*[@text='OK pour moi']")
         public WebElement cookieOk;
 
         @AndroidFindBy(xpath = "(//android.widget.EditText)[1]")

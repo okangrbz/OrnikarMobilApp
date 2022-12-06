@@ -2,10 +2,12 @@ package stepdefinitions;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
-import org.aspectj.weaver.bcel.FakeAnnotation;
-import org.junit.Test;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import pages.CréerMoncompte;
-import utillities.DriverOrn;
+import utillities.DriverMob;
+import utillities.ReusableMethods;
+
+import static utillities.DriverMob.driver;
 
 public class CréerMonCompte {
     CréerMoncompte element=new CréerMoncompte();
@@ -13,7 +15,7 @@ public class CréerMonCompte {
 
     @Given("L'utilisateur se rend à l'app Ornikar")
     public void l_utilisateur_se_rend_à_l_app_ornikar() {
-       DriverOrn.driver();
+       driver();
 
     }
 
@@ -22,14 +24,13 @@ public class CréerMonCompte {
 
     @When("L'utilisateur clique sur le bouton Je m'inscris gratuitment.")
     public void l_utilisateur_clique_sur_le_bouton_je_m_inscris_gratuitment() {
-        element.cookieOk.click();
         element.boutoninscript.click();
     }
     @When("L'utilisateur accepte les cookies.")
-    public void l_utilisateur_accepte_les_cookies() {
-        if (element.cookieOk.isEnabled()){
-            element.cookieOk.click();
-        }
+    public void l_utilisateur_accepte_les_cookies() throws InterruptedException {
+
+        TouchActions action=new TouchActions(DriverMob.driver());
+        action.doubleClick(element.cookieOk).perform();
 
 
     }
