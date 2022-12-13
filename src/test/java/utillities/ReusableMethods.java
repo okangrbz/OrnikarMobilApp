@@ -6,11 +6,17 @@ import io.appium.java_client.android.AndroidElement;
 
 import java.util.List;
 
+import static utillities.DriverMob.driverEmulateur;
+
 public class ReusableMethods {
 
-    public static void clickOnPage(String pageName) throws InterruptedException {
-        Thread.sleep(4000);
-        List<AndroidElement> pages = DriverMob.driver().findElementsByClassName("android.widget.TextView");
+    public static void clickOnPage(String pageName)  {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        List<AndroidElement> pages = driverEmulateur().findElementsByClassName("android.widget.TextView");
         for (MobileElement page: pages) {
             if (page.getText().equals(pageName)){
                 page.click();
@@ -23,7 +29,7 @@ public class ReusableMethods {
     }
 
     public static void scrollWithUiScrollable(String elementText){
-        AndroidDriver driver = DriverMob.driver();
+        AndroidDriver driver = (AndroidDriver) driverEmulateur();
         driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+elementText+"\"))");
         driver.findElementByXPath("//*[@text='"+elementText+"']").click();
     }
